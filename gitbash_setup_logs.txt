@@ -1,0 +1,632 @@
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis
+$ git clone https://github.com/pparaska/bkp_thesis_14_11.git
+Cloning into 'bkp_thesis_14_11'...
+remote: Enumerating objects: 151, done.
+remote: Total 151 (delta 0), reused 0 (delta 0), pack-reused 151 (from 1)
+Receiving objects: 100% (151/151), 80.34 MiB | 31.51 MiB/s, done.
+Resolving deltas: 100% (46/46), done.
+
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis
+$ ll
+total 4
+drwxr-xr-x 1 INFOLAB01 1049089 0 Nov 22 15:40 bkp_thesis_14_11/
+
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis
+$ cd bkp_thesis_14_11/
+
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ ll
+total 19419
+drwxr-xr-x 1 INFOLAB01 1049089        0 Nov 22 15:40 Documentation/
+-rw-r--r-- 1 INFOLAB01 1049089     1084 Nov 22 15:40 LICENSE
+-rw-r--r-- 1 INFOLAB01 1049089     8793 Nov 22 15:40 README.md
+drwxr-xr-x 1 INFOLAB01 1049089        0 Nov 22 15:40 benchmark/
+drwxr-xr-x 1 INFOLAB01 1049089        0 Nov 22 15:40 config/
+drwxr-xr-x 1 INFOLAB01 1049089        0 Nov 22 15:40 em_llm/
+-rw-r--r-- 1 INFOLAB01 1049089 12803381 Nov 22 15:40 en_core_web_sm-3.7.1-py3-none-any.whl
+drwxr-xr-x 1 INFOLAB01 1049089        0 Nov 22 15:40 images/
+-rw-r--r-- 1 INFOLAB01 1049089      250 Nov 22 15:40 requirements.txt
+-rw-r--r-- 1 INFOLAB01 1049089      466 Nov 22 15:40 run_commands_in_bash.txt
+drwxr-xr-x 1 INFOLAB01 1049089        0 Nov 22 15:40 scripts/
+-rw-r--r-- 1 INFOLAB01 1049089      127 Nov 22 15:40 setup.py
+-rwxr-xr-x 1 INFOLAB01 1049089  7046072 Nov 22 15:40 wget.exe*
+
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\python.exe" -m venv .venv
+Traceback (most recent call last):
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\venv\__main__.py", line 6, in <module>
+    main()
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\venv\__init__.py", line 516, in main
+    builder.create(d)
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\venv\__init__.py", line 75, in create
+    self._setup_pip(context)
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\venv\__init__.py", line 328, in _setup_pip
+    self._call_new_python(context, '-m', 'ensurepip', '--upgrade',
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\venv\__init__.py", line 324, in _call_new_python
+    subprocess.check_output(args, **kwargs)
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "C:\Users\infolab01\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1141, in communicate
+    stdout = self.stdout.read()
+KeyboardInterrupt
+
+
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ /c/Users/infolab01/AppData/Local/Programs/Python/Python310/python.exe -m venv .venv
+
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ source .venv/Scripts/activate
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ python3 -m pip install --upgrade pip
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ python --version
+Python 3.10.11
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ python -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (23.0.1)
+Collecting pip
+  Downloading pip-25.3-py3-none-any.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 37.6 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.0.1
+    Uninstalling pip-23.0.1:
+      Successfully uninstalled pip-23.0.1
+Successfully installed pip-25.3
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ pip install -r requirements.txt
+Processing c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\en_core_web_sm-3.7.1-py3-none-any.whl (from -r requirements.txt (line 16))
+Collecting torch>=1.13.1 (from -r requirements.txt (line 1))
+  Downloading torch-2.9.1-cp310-cp310-win_amd64.whl.metadata (30 kB)
+Collecting transformers<=4.41.0,>=4.37.2 (from -r requirements.txt (line 2))
+  Using cached transformers-4.41.0-py3-none-any.whl.metadata (43 kB)
+Collecting fschat>=0.2.35 (from -r requirements.txt (line 3))
+  Using cached fschat-0.2.36-py3-none-any.whl.metadata (20 kB)
+Collecting datasets<=2.21.0,>=2.17.0 (from -r requirements.txt (line 4))
+  Using cached datasets-2.21.0-py3-none-any.whl.metadata (21 kB)
+Collecting omegaconf (from -r requirements.txt (line 5))
+  Using cached omegaconf-2.3.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting accelerate (from -r requirements.txt (line 6))
+  Downloading accelerate-1.12.0-py3-none-any.whl.metadata (19 kB)
+Collecting rouge==1.0.1 (from -r requirements.txt (line 9))
+  Using cached rouge-1.0.1-py3-none-any.whl.metadata (4.1 kB)
+Collecting fuzzywuzzy==0.18.0 (from -r requirements.txt (line 10))
+  Using cached fuzzywuzzy-0.18.0-py2.py3-none-any.whl.metadata (4.9 kB)
+Collecting jieba==0.42.1 (from -r requirements.txt (line 11))
+  Using cached jieba-0.42.1-py3-none-any.whl
+Collecting spacy (from -r requirements.txt (line 12))
+  Downloading spacy-3.8.11-cp310-cp310-win_amd64.whl.metadata (28 kB)
+Collecting evaluate (from -r requirements.txt (line 13))
+  Downloading evaluate-0.4.6-py3-none-any.whl.metadata (9.5 kB)
+Collecting rouge_score (from -r requirements.txt (line 14))
+  Using cached rouge_score-0.1.2-py3-none-any.whl
+Collecting spacy (from -r requirements.txt (line 12))
+  Using cached spacy-3.7.5-cp310-cp310-win_amd64.whl.metadata (27 kB)
+Collecting six (from rouge==1.0.1->-r requirements.txt (line 9))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting filelock (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting huggingface-hub<1.0,>=0.23.0 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Collecting numpy>=1.17 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Using cached numpy-2.2.6-cp310-cp310-win_amd64.whl.metadata (60 kB)
+Collecting packaging>=20.0 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pyyaml>=5.1 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading pyyaml-6.0.3-cp310-cp310-win_amd64.whl.metadata (2.4 kB)
+Collecting regex!=2019.12.17 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading regex-2025.11.3-cp310-cp310-win_amd64.whl.metadata (41 kB)
+Collecting requests (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting tokenizers<0.20,>=0.19 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Using cached tokenizers-0.19.1-cp310-none-win_amd64.whl.metadata (6.9 kB)
+Collecting safetensors>=0.4.1 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading safetensors-0.7.0-cp38-abi3-win_amd64.whl.metadata (4.2 kB)
+Collecting tqdm>=4.27 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting pyarrow>=15.0.0 (from datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading pyarrow-22.0.0-cp310-cp310-win_amd64.whl.metadata (3.3 kB)
+Collecting dill<0.3.9,>=0.3.0 (from datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached dill-0.3.8-py3-none-any.whl.metadata (10 kB)
+Collecting pandas (from datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading pandas-2.3.3-cp310-cp310-win_amd64.whl.metadata (19 kB)
+Collecting xxhash (from datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading xxhash-3.6.0-cp310-cp310-win_amd64.whl.metadata (13 kB)
+Collecting multiprocess (from datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached multiprocess-0.70.18-py310-none-any.whl.metadata (7.5 kB)
+Collecting fsspec<=2024.6.1,>=2023.1.0 (from fsspec[http]<=2024.6.1,>=2023.1.0->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached fsspec-2024.6.1-py3-none-any.whl.metadata (11 kB)
+Collecting aiohttp (from datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading aiohttp-3.13.2-cp310-cp310-win_amd64.whl.metadata (8.4 kB)
+Collecting spacy-legacy<3.1.0,>=3.0.11 (from spacy->-r requirements.txt (line 12))
+  Using cached spacy_legacy-3.0.12-py2.py3-none-any.whl.metadata (2.8 kB)
+Collecting spacy-loggers<2.0.0,>=1.0.0 (from spacy->-r requirements.txt (line 12))
+  Using cached spacy_loggers-1.0.5-py3-none-any.whl.metadata (23 kB)
+Collecting murmurhash<1.1.0,>=0.28.0 (from spacy->-r requirements.txt (line 12))
+  Downloading murmurhash-1.0.15-cp310-cp310-win_amd64.whl.metadata (2.3 kB)
+Collecting cymem<2.1.0,>=2.0.2 (from spacy->-r requirements.txt (line 12))
+  Downloading cymem-2.0.13-cp310-cp310-win_amd64.whl.metadata (9.9 kB)
+Collecting preshed<3.1.0,>=3.0.2 (from spacy->-r requirements.txt (line 12))
+  Downloading preshed-3.0.12-cp310-cp310-win_amd64.whl.metadata (2.6 kB)
+Collecting thinc<8.3.0,>=8.2.2 (from spacy->-r requirements.txt (line 12))
+  Using cached thinc-8.2.5-cp310-cp310-win_amd64.whl.metadata (15 kB)
+Collecting wasabi<1.2.0,>=0.9.1 (from spacy->-r requirements.txt (line 12))
+  Using cached wasabi-1.1.3-py3-none-any.whl.metadata (28 kB)
+Collecting srsly<3.0.0,>=2.4.3 (from spacy->-r requirements.txt (line 12))
+  Downloading srsly-2.5.2-cp310-cp310-win_amd64.whl.metadata (20 kB)
+Collecting catalogue<2.1.0,>=2.0.6 (from spacy->-r requirements.txt (line 12))
+  Using cached catalogue-2.0.10-py3-none-any.whl.metadata (14 kB)
+Collecting weasel<0.5.0,>=0.1.0 (from spacy->-r requirements.txt (line 12))
+  Downloading weasel-0.4.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting typer<1.0.0,>=0.3.0 (from spacy->-r requirements.txt (line 12))
+  Downloading typer-0.20.0-py3-none-any.whl.metadata (16 kB)
+Collecting pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 (from spacy->-r requirements.txt (line 12))
+  Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+Collecting jinja2 (from spacy->-r requirements.txt (line 12))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: setuptools in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from spacy->-r requirements.txt (line 12)) (65.5.0)
+Collecting langcodes<4.0.0,>=3.2.0 (from spacy->-r requirements.txt (line 12))
+  Using cached langcodes-3.5.0-py3-none-any.whl.metadata (29 kB)
+Collecting typing-extensions>=3.7.4.3 (from huggingface-hub<1.0,>=0.23.0->transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting language-data>=1.2 (from langcodes<4.0.0,>=3.2.0->spacy->-r requirements.txt (line 12))
+  Using cached language_data-1.3.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy->-r requirements.txt (line 12))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.41.5 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy->-r requirements.txt (line 12))
+  Downloading pydantic_core-2.41.5-cp310-cp310-win_amd64.whl.metadata (7.4 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy->-r requirements.txt (line 12))
+  Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting charset_normalizer<4,>=2 (from requests->transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading charset_normalizer-3.4.4-cp310-cp310-win_amd64.whl.metadata (38 kB)
+Collecting idna<4,>=2.5 (from requests->transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Using cached urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests->transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Downloading certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+Collecting blis<0.8.0,>=0.7.8 (from thinc<8.3.0,>=8.2.2->spacy->-r requirements.txt (line 12))
+  Using cached blis-0.7.11-cp310-cp310-win_amd64.whl.metadata (7.6 kB)
+Collecting confection<1.0.0,>=0.0.1 (from thinc<8.3.0,>=8.2.2->spacy->-r requirements.txt (line 12))
+  Using cached confection-0.1.5-py3-none-any.whl.metadata (19 kB)
+Collecting numpy>=1.17 (from transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Using cached numpy-1.26.4-cp310-cp310-win_amd64.whl.metadata (61 kB)
+Collecting colorama (from tqdm>=4.27->transformers<=4.41.0,>=4.37.2->-r requirements.txt (line 2))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting click>=8.0.0 (from typer<1.0.0,>=0.3.0->spacy->-r requirements.txt (line 12))
+  Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting shellingham>=1.3.0 (from typer<1.0.0,>=0.3.0->spacy->-r requirements.txt (line 12))
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=10.11.0 (from typer<1.0.0,>=0.3.0->spacy->-r requirements.txt (line 12))
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting typer-slim<1.0.0,>=0.3.0 (from weasel<0.5.0,>=0.1.0->spacy->-r requirements.txt (line 12))
+  Downloading typer_slim-0.20.0-py3-none-any.whl.metadata (16 kB)
+Collecting cloudpathlib<1.0.0,>=0.7.0 (from weasel<0.5.0,>=0.1.0->spacy->-r requirements.txt (line 12))
+  Downloading cloudpathlib-0.23.0-py3-none-any.whl.metadata (16 kB)
+Collecting smart-open<8.0.0,>=5.2.1 (from weasel<0.5.0,>=0.1.0->spacy->-r requirements.txt (line 12))
+  Downloading smart_open-7.5.0-py3-none-any.whl.metadata (24 kB)
+Collecting wrapt (from smart-open<8.0.0,>=5.2.1->weasel<0.5.0,>=0.1.0->spacy->-r requirements.txt (line 12))
+  Downloading wrapt-2.0.1-cp310-cp310-win_amd64.whl.metadata (9.2 kB)
+Collecting sympy>=1.13.3 (from torch>=1.13.1->-r requirements.txt (line 1))
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch>=1.13.1->-r requirements.txt (line 1))
+  Using cached networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting fastapi (from fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading fastapi-0.121.3-py3-none-any.whl.metadata (30 kB)
+Collecting httpx (from fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting markdown2[all] (from fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading markdown2-2.5.4-py3-none-any.whl.metadata (2.1 kB)
+Collecting nh3 (from fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading nh3-0.3.2-cp38-abi3-win_amd64.whl.metadata (2.0 kB)
+Collecting prompt-toolkit>=3.0.0 (from fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached prompt_toolkit-3.0.52-py3-none-any.whl.metadata (6.4 kB)
+Collecting shortuuid (from fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached shortuuid-1.0.13-py3-none-any.whl.metadata (5.8 kB)
+Collecting tiktoken (from fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading tiktoken-0.12.0-cp310-cp310-win_amd64.whl.metadata (6.9 kB)
+Collecting uvicorn (from fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading uvicorn-0.38.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting antlr4-python3-runtime==4.9.* (from omegaconf->-r requirements.txt (line 5))
+  Using cached antlr4_python3_runtime-4.9.3-py3-none-any.whl
+Collecting psutil (from accelerate->-r requirements.txt (line 6))
+  Downloading psutil-7.1.3-cp37-abi3-win_amd64.whl.metadata (23 kB)
+Collecting absl-py (from rouge_score->-r requirements.txt (line 14))
+  Using cached absl_py-2.3.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting nltk (from rouge_score->-r requirements.txt (line 14))
+  Downloading nltk-3.9.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting async-timeout<6.0,>=4.0 (from aiohttp->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting attrs>=17.3.0 (from aiohttp->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading frozenlist-1.8.0-cp310-cp310-win_amd64.whl.metadata (21 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading multidict-6.7.0-cp310-cp310-win_amd64.whl.metadata (5.5 kB)
+Collecting propcache>=0.2.0 (from aiohttp->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading propcache-0.4.1-cp310-cp310-win_amd64.whl.metadata (14 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Downloading yarl-1.22.0-cp310-cp310-win_amd64.whl.metadata (77 kB)
+Collecting marisa-trie>=1.1.0 (from language-data>=1.2->langcodes<4.0.0,>=3.2.0->spacy->-r requirements.txt (line 12))
+  Downloading marisa_trie-1.3.1-cp310-cp310-win_amd64.whl.metadata (10 kB)
+Collecting wcwidth (from prompt-toolkit>=3.0.0->fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached wcwidth-0.2.14-py2.py3-none-any.whl.metadata (15 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy->-r requirements.txt (line 12))
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy->-r requirements.txt (line 12))
+  Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy->-r requirements.txt (line 12))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch>=1.13.1->-r requirements.txt (line 1))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting starlette<0.51.0,>=0.40.0 (from fastapi->fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading starlette-0.50.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting annotated-doc>=0.0.2 (from fastapi->fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+Collecting anyio<5,>=3.6.2 (from starlette<0.51.0,>=0.40.0->fastapi->fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading anyio-4.11.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting exceptiongroup>=1.0.2 (from anyio<5,>=3.6.2->starlette<0.51.0,>=0.40.0->fastapi->fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+Collecting sniffio>=1.1 (from anyio<5,>=3.6.2->starlette<0.51.0,>=0.40.0->fastapi->fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting httpcore==1.* (from httpx->fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx->fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->spacy->-r requirements.txt (line 12))
+  Downloading markupsafe-3.0.3-cp310-cp310-win_amd64.whl.metadata (2.8 kB)
+Collecting wavedrom (from markdown2[all]->fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached wavedrom-2.0.3.post3-py2.py3-none-any.whl
+Collecting latex2mathml (from markdown2[all]->fschat>=0.2.35->-r requirements.txt (line 3))
+  Downloading latex2mathml-3.78.1-py3-none-any.whl.metadata (15 kB)
+INFO: pip is looking at multiple versions of multiprocess to determine which version is compatible with other requirements. This could take a while.
+Collecting multiprocess (from datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached multiprocess-0.70.17-py310-none-any.whl.metadata (7.2 kB)
+  Using cached multiprocess-0.70.16-py310-none-any.whl.metadata (7.2 kB)
+Collecting joblib (from nltk->rouge_score->-r requirements.txt (line 14))
+  Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas->datasets<=2.21.0,>=2.17.0->-r requirements.txt (line 4))
+  Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting svgwrite (from wavedrom->markdown2[all]->fschat>=0.2.35->-r requirements.txt (line 3))
+  Using cached svgwrite-1.4.3-py3-none-any.whl.metadata (8.8 kB)
+Using cached rouge-1.0.1-py3-none-any.whl (13 kB)
+Using cached fuzzywuzzy-0.18.0-py2.py3-none-any.whl (18 kB)
+Using cached transformers-4.41.0-py3-none-any.whl (9.1 MB)
+Using cached datasets-2.21.0-py3-none-any.whl (527 kB)
+Using cached spacy-3.7.5-cp310-cp310-win_amd64.whl (12.1 MB)
+Using cached catalogue-2.0.10-py3-none-any.whl (17 kB)
+Downloading cymem-2.0.13-cp310-cp310-win_amd64.whl (40 kB)
+Using cached dill-0.3.8-py3-none-any.whl (116 kB)
+Using cached fsspec-2024.6.1-py3-none-any.whl (177 kB)
+Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 20.3 MB/s  0:00:00
+Using cached langcodes-3.5.0-py3-none-any.whl (182 kB)
+Downloading murmurhash-1.0.15-cp310-cp310-win_amd64.whl (25 kB)
+Downloading preshed-3.0.12-cp310-cp310-win_amd64.whl (117 kB)
+Downloading pydantic-2.12.4-py3-none-any.whl (463 kB)
+Downloading pydantic_core-2.41.5-cp310-cp310-win_amd64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 109.5 MB/s  0:00:00
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp310-cp310-win_amd64.whl (107 kB)
+Downloading idna-3.11-py3-none-any.whl (71 kB)
+Using cached spacy_legacy-3.0.12-py2.py3-none-any.whl (29 kB)
+Using cached spacy_loggers-1.0.5-py3-none-any.whl (22 kB)
+Downloading srsly-2.5.2-cp310-cp310-win_amd64.whl (654 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 654.0/654.0 kB 26.1 MB/s  0:00:00
+Using cached thinc-8.2.5-cp310-cp310-win_amd64.whl (1.5 MB)
+Using cached blis-0.7.11-cp310-cp310-win_amd64.whl (6.6 MB)
+Using cached confection-0.1.5-py3-none-any.whl (35 kB)
+Using cached numpy-1.26.4-cp310-cp310-win_amd64.whl (15.8 MB)
+Using cached tokenizers-0.19.1-cp310-none-win_amd64.whl (2.2 MB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Downloading typer-0.20.0-py3-none-any.whl (47 kB)
+Using cached urllib3-2.5.0-py3-none-any.whl (129 kB)
+Using cached wasabi-1.1.3-py3-none-any.whl (27 kB)
+Downloading weasel-0.4.3-py3-none-any.whl (50 kB)
+Downloading cloudpathlib-0.23.0-py3-none-any.whl (62 kB)
+Downloading smart_open-7.5.0-py3-none-any.whl (63 kB)
+Downloading typer_slim-0.20.0-py3-none-any.whl (47 kB)
+Downloading torch-2.9.1-cp310-cp310-win_amd64.whl (111.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.0/111.0 MB 73.0 MB/s  0:00:01
+Using cached fschat-0.2.36-py3-none-any.whl (256 kB)
+Using cached omegaconf-2.3.0-py3-none-any.whl (79 kB)
+Downloading accelerate-1.12.0-py3-none-any.whl (380 kB)
+Downloading evaluate-0.4.6-py3-none-any.whl (84 kB)
+Downloading aiohttp-3.13.2-cp310-cp310-win_amd64.whl (455 kB)
+Using cached async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Downloading multidict-6.7.0-cp310-cp310-win_amd64.whl (46 kB)
+Downloading yarl-1.22.0-cp310-cp310-win_amd64.whl (86 kB)
+Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Using cached aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+Downloading certifi-2025.11.12-py3-none-any.whl (159 kB)
+Downloading click-8.3.1-py3-none-any.whl (108 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading frozenlist-1.8.0-cp310-cp310-win_amd64.whl (43 kB)
+Using cached language_data-1.3.0-py3-none-any.whl (5.4 MB)
+Downloading marisa_trie-1.3.1-cp310-cp310-win_amd64.whl (143 kB)
+Using cached networkx-3.4.2-py3-none-any.whl (1.7 MB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached prompt_toolkit-3.0.52-py3-none-any.whl (391 kB)
+Downloading propcache-0.4.1-cp310-cp310-win_amd64.whl (41 kB)
+Downloading pyarrow-22.0.0-cp310-cp310-win_amd64.whl (28.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.1/28.1 MB 34.9 MB/s  0:00:00
+Downloading pyyaml-6.0.3-cp310-cp310-win_amd64.whl (158 kB)
+Downloading regex-2025.11.3-cp310-cp310-win_amd64.whl (277 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading safetensors-0.7.0-cp38-abi3-win_amd64.whl (341 kB)
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Using cached absl_py-2.3.1-py3-none-any.whl (135 kB)
+Downloading fastapi-0.121.3-py3-none-any.whl (109 kB)
+Downloading starlette-0.50.0-py3-none-any.whl (74 kB)
+Downloading anyio-4.11.0-py3-none-any.whl (109 kB)
+Downloading annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Downloading filelock-3.20.0-py3-none-any.whl (16 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.3-cp310-cp310-win_amd64.whl (15 kB)
+Downloading markdown2-2.5.4-py3-none-any.whl (49 kB)
+Downloading latex2mathml-3.78.1-py3-none-any.whl (73 kB)
+Using cached multiprocess-0.70.16-py310-none-any.whl (134 kB)
+Downloading nh3-0.3.2-cp38-abi3-win_amd64.whl (596 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 596.4/596.4 kB 20.9 MB/s  0:00:00
+Downloading nltk-3.9.2-py3-none-any.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 40.4 MB/s  0:00:00
+Downloading joblib-1.5.2-py3-none-any.whl (308 kB)
+Downloading pandas-2.3.3-cp310-cp310-win_amd64.whl (11.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 59.0 MB/s  0:00:00
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Downloading psutil-7.1.3-cp37-abi3-win_amd64.whl (247 kB)
+Using cached shortuuid-1.0.13-py3-none-any.whl (10 kB)
+Downloading tiktoken-0.12.0-cp310-cp310-win_amd64.whl (879 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.4/879.4 kB 38.6 MB/s  0:00:00
+Downloading uvicorn-0.38.0-py3-none-any.whl (68 kB)
+Using cached svgwrite-1.4.3-py3-none-any.whl (67 kB)
+Using cached wcwidth-0.2.14-py2.py3-none-any.whl (37 kB)
+Downloading wrapt-2.0.1-cp310-cp310-win_amd64.whl (60 kB)
+Downloading xxhash-3.6.0-cp310-cp310-win_amd64.whl (31 kB)
+Installing collected packages: pytz, mpmath, jieba, fuzzywuzzy, antlr4-python3-runtime, xxhash, wrapt, wcwidth, urllib3, tzdata, typing-extensions, sympy, svgwrite, spacy-loggers, spacy-legacy, sniffio, six, shortuuid, shellingham, safetensors, regex, pyyaml, pygments, pyarrow, psutil, propcache, packaging, numpy, nh3, networkx, murmurhash, mdurl, MarkupSafe, markdown2, marisa-trie, latex2mathml, joblib, idna, h11, fsspec, frozenlist, filelock, dill, cymem, colorama, charset_normalizer, certifi, catalogue, attrs, async-timeout, annotated-types, annotated-doc, aiohappyeyeballs, absl-py, wavedrom, wasabi, typing-inspection, tqdm, srsly, smart-open, rouge, requests, python-dateutil, pydantic-core, prompt-toolkit, preshed, omegaconf, multiprocess, multidict, markdown-it-py, language-data, jinja2, httpcore, exceptiongroup, cloudpathlib, click, blis, aiosignal, yarl, uvicorn, typer-slim, torch, tiktoken, rich, pydantic, pandas, nltk, langcodes, huggingface-hub, anyio, typer, tokenizers, starlette, rouge_score, httpx, confection, aiohttp, accelerate, weasel, transformers, thinc, fastapi, spacy, fschat, datasets, evaluate, en-core-web-sm
+Successfully installed MarkupSafe-3.0.3 absl-py-2.3.1 accelerate-1.12.0 aiohappyeyeballs-2.6.1 aiohttp-3.13.2 aiosignal-1.4.0 annotated-doc-0.0.4 annotated-types-0.7.0 antlr4-python3-runtime-4.9.3 anyio-4.11.0 async-timeout-5.0.1 attrs-25.4.0 blis-0.7.11 catalogue-2.0.10 certifi-2025.11.12 charset_normalizer-3.4.4 click-8.3.1 cloudpathlib-0.23.0 colorama-0.4.6 confection-0.1.5 cymem-2.0.13 datasets-2.21.0 dill-0.3.8 en-core-web-sm-3.7.1 evaluate-0.4.6 exceptiongroup-1.3.1 fastapi-0.121.3 filelock-3.20.0 frozenlist-1.8.0 fschat-0.2.36 fsspec-2024.6.1 fuzzywuzzy-0.18.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-0.36.0 idna-3.11 jieba-0.42.1 jinja2-3.1.6 joblib-1.5.2 langcodes-3.5.0 language-data-1.3.0 latex2mathml-3.78.1 marisa-trie-1.3.1 markdown-it-py-4.0.0 markdown2-2.5.4 mdurl-0.1.2 mpmath-1.3.0 multidict-6.7.0 multiprocess-0.70.16 murmurhash-1.0.15 networkx-3.4.2 nh3-0.3.2 nltk-3.9.2 numpy-1.26.4 omegaconf-2.3.0 packaging-25.0 pandas-2.3.3 preshed-3.0.12 prompt-toolkit-3.0.52 propcache-0.4.1 psutil-7.1.3 pyarrow-22.0.0 pydantic-2.12.4 pydantic-core-2.41.5 pygments-2.19.2 python-dateutil-2.9.0.post0 pytz-2025.2 pyyaml-6.0.3 regex-2025.11.3 requests-2.32.5 rich-14.2.0 rouge-1.0.1 rouge_score-0.1.2 safetensors-0.7.0 shellingham-1.5.4 shortuuid-1.0.13 six-1.17.0 smart-open-7.5.0 sniffio-1.3.1 spacy-3.7.5 spacy-legacy-3.0.12 spacy-loggers-1.0.5 srsly-2.5.2 starlette-0.50.0 svgwrite-1.4.3 sympy-1.14.0 thinc-8.2.5 tiktoken-0.12.0 tokenizers-0.19.1 torch-2.9.1 tqdm-4.67.1 transformers-4.41.0 typer-0.20.0 typer-slim-0.20.0 typing-extensions-4.15.0 typing-inspection-0.4.2 tzdata-2025.2 urllib3-2.5.0 uvicorn-0.38.0 wasabi-1.1.3 wavedrom-2.0.3.post3 wcwidth-0.2.14 weasel-0.4.3 wrapt-2.0.1 xxhash-3.6.0 yarl-1.22.0
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ pip install -e .
+Obtaining file:///C:/Users/infolab01/Downloads/Thesis/bkp_thesis_14_11
+  Installing build dependencies ... done
+  Checking if build backend supports build_editable ... done
+  Getting requirements to build editable ... done
+  Preparing editable metadata (pyproject.toml) ... done
+Building wheels for collected packages: em_llm
+  Building editable for em_llm (pyproject.toml) ... done
+  Created wheel for em_llm: filename=em_llm-0.0.1-0.editable-py3-none-any.whl size=3502 sha256=2a320c9e2eaacc089db3557aadf2128307244dd966440d0647bd936a58fb763d
+  Stored in directory: C:\Users\infolab01\AppData\Local\Temp\pip-ephem-wheel-cache-5a5ru7g1\wheels\6c\78\8d\ff58c27cf7333f3007d119a7f6e92d1f7cd6fbd4373374ee73
+Successfully built em_llm
+Installing collected packages: em_llm
+Successfully installed em_llm-0.0.1
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ bash scripts/run.sh -m mistral -b long-bench -d samsum -o True
+Sat Nov 22 16:12:16 2025
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 576.83                 Driver Version: 576.83         CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4070      WDDM  |   00000000:01:00.0  On |                  N/A |
+|  0%   35C    P8              9W /  200W |     503MiB /  12282MiB |     48%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            3948    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A            4432    C+G   ...yb3d8bbwe\WindowsTerminal.exe      N/A      |
+|    0   N/A  N/A            5204    C+G   ...indows\System32\ShellHost.exe      N/A      |
+|    0   N/A  N/A            9508    C+G   ..._cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A           11076    C+G   ...y\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A           11752    C+G   ...em32\ApplicationFrameHost.exe      N/A      |
+|    0   N/A  N/A           12012    C+G   ....0.3595.94\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           12684    C+G   ...es\Microsoft VS Code\Code.exe      N/A      |
+|    0   N/A  N/A           13480    C+G   ...xyewy\ShellExperienceHost.exe      N/A      |
+|    0   N/A  N/A           14116    C+G   ....6.portable.x64\notepad++.exe      N/A      |
+|    0   N/A  N/A           14324    C+G   ...8bbwe\PhoneExperienceHost.exe      N/A      |
+|    0   N/A  N/A           15312    C+G   ...crosoft\OneDrive\OneDrive.exe      N/A      |
+|    0   N/A  N/A           15532    C+G   ....0.3595.94\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           16464    C+G   ...4__8wekyb3d8bbwe\ms-teams.exe      N/A      |
+|    0   N/A  N/A           17764    C+G   ...t\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A           18436    C+G   ...ntrolPanel\SystemSettings.exe      N/A      |
+|    0   N/A  N/A           18928    C+G   ...\Creative Cloud UI Helper.exe      N/A      |
++-----------------------------------------------------------------------------------------+
+Visible GPUs: 1
+World size: 1
+--------------------------------------------------
+Starting evaluation on dataset: samsum
+Using model: mistral
+Benchmark: long-bench
+Disk offload: True
+Output directory: /c/Users/infolab01/Downloads/Thesis/bkp_thesis_14_11/benchmark/results/mistral/long-bench
+--------------------------------------------------
+verbose: False
+compute_ppl: True
+return_block_size: True
+logging: True
+em_splitter: surprisal
+max_len: 8192
+chunk_size: 128
+conv_type: mistral-inst
+extended_passkey: 1024
+model:
+  type: em-llm
+  path: mistralai/Mistral-7B-Instruct-v0.2
+  min_block_size: 8
+  max_block_size: 32
+  n_init: 64
+  n_local: 1024
+  n_mem: 512
+  repr_topk: 4
+  max_cached_block: 128
+  exc_block_size: 128
+  base: 1000000
+  distance_scale: 1.0
+  surprisal_threshold_gamma: 1.0
+  min_free_cpu_memory: 50
+  disk_offload_threshold: 50000
+  vector_offload_threshold: 5000
+  similarity_refinement_kwargs:
+    similarity_refinement: False
+    refine_with_buffer: True
+    refine_from_layer: 20
+    similarity_metric: modularity
+  contiguity_buffer_kwargs:
+    use_contiguity_buffer: False
+    contiguity_buffer_size: 0.3
+  uniform_blocks: False
+  random_topk_blocks: False
+  use_hf_acc: False
+  allow_disk_offload: True
+  world_size: 1
+  disk_offload_dir: C:/Users/infolab01/Downloads/Thesis/bkp_thesis_14_11/benchmark/results/mistral/long-bench/offload_data/0
+  tokenizer_path: mistralai/Mistral-7B-Instruct-v0.2
+output_dir_path: C:/Users/infolab01/Downloads/Thesis/bkp_thesis_14_11/benchmark/results/mistral/long-bench
+rank: 0
+world_size: 1
+datetime: 2025-11-22_16-12
+truncation: None
+datasets: ['samsum']
+tokenizer_config.json: 2.10kB [00:00, ?B/s]
+C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\.venv\lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\infolab01\.cache\huggingface\hub\models--mistralai--Mistral-7B-Instruct-v0.2. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+tokenizer.model: 100%|###############################################################################################################################################################################################################################| 493k/493k [00:00<00:00, 7.82MB/s]
+tokenizer.json: 1.80MB [00:00, 28.2MB/s]
+special_tokens_map.json: 100%|#################################################################################################################################################################################################################################| 414/414 [00:00<?, ?B/s]
+Using attention type: sdpa
+config.json: 100%|#############################################################################################################################################################################################################################################| 596/596 [00:00<?, ?B/s]
+model.safetensors.index.json: 25.1kB [00:00, ?B/s]
+Downloading shards:   0%|                                                                                                                                                                                                                                         | 0/3 [00:00<?, ?it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+model-00001-of-00003.safetensors: 100%|#############################################################################################################################################################################################################| 4.94G/4.94G [00:48<00:00, 103MB/s]
+Downloading shards:  33%|###########################################################################                                                                                                                                                      | 1/3 [00:48<01:36, 48.36s/it]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+model-00002-of-00003.safetensors: 100%|#############################################################################################################################################################################################################| 5.00G/5.00G [00:48<00:00, 102MB/s]
+Downloading shards:  67%|######################################################################################################################################################                                                                           | 2/3 [01:37<00:48, 48.83s/it]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+model-00003-of-00003.safetensors: 100%|############################################################################################################################################################################################################| 4.54G/4.54G [00:49<00:00, 91.3MB/s]
+Downloading shards: 100%|#################################################################################################################################################################################################################################| 3/3 [02:27<00:00, 49.18s/it]
+Loading checkpoint shards:   0%|                                                                                                                                                                                                                                  | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\benchmark\pred.py", line 618, in <module>
+    main(args)
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\benchmark\pred.py", line 554, in main
+    model, tokenizer = get_model_and_tokenizer(args.model, rank=args.rank)
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\benchmark\pred.py", line 100, in get_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(model_config.path
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\.venv\lib\site-packages\transformers\models\auto\auto_factory.py", line 563, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\.venv\lib\site-packages\transformers\modeling_utils.py", line 3754, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\.venv\lib\site-packages\transformers\modeling_utils.py", line 4214, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\.venv\lib\site-packages\transformers\modeling_utils.py", line 887, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\.venv\lib\site-packages\accelerate\utils\modeling.py", line 343, in set_module_tensor_to_device
+    new_value = value.to(device, non_blocking=non_blocking)
+  File "C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\.venv\lib\site-packages\torch\cuda\__init__.py", line 403, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+Completed: samsum
+C:\Users\infolab01\Downloads\Thesis\bkp_thesis_14_11\.venv\lib\site-packages\fuzzywuzzy\fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+Evaluating on: ['logs']
+{}
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ pip uninstall -y torch torchvision torchaudio
+Found existing installation: torch 2.9.1
+Uninstalling torch-2.9.1:
+  Successfully uninstalled torch-2.9.1
+WARNING: Skipping torchvision as it is not installed.
+WARNING: Skipping torchaudio as it is not installed.
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+Looking in indexes: https://download.pytorch.org/whl/cu121
+Collecting torch
+  Downloading https://download.pytorch.org/whl/cu121/torch-2.5.1%2Bcu121-cp310-cp310-win_amd64.whl (2449.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 GB 53.4 MB/s  0:00:25
+Collecting torchvision
+  Downloading https://download.pytorch.org/whl/cu121/torchvision-0.20.1%2Bcu121-cp310-cp310-win_amd64.whl (6.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.1/6.1 MB 92.1 MB/s  0:00:00
+Collecting torchaudio
+  Downloading https://download.pytorch.org/whl/cu121/torchaudio-2.5.1%2Bcu121-cp310-cp310-win_amd64.whl (4.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 82.4 MB/s  0:00:00
+Requirement already satisfied: filelock in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from torch) (3.20.0)
+Requirement already satisfied: typing-extensions>=4.8.0 in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from torch) (4.15.0)
+Requirement already satisfied: networkx in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from torch) (3.4.2)
+Requirement already satisfied: jinja2 in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from torch) (2024.6.1)
+Collecting sympy==1.13.1 (from torch)
+  Downloading https://download.pytorch.org/whl/sympy-1.13.1-py3-none-any.whl (6.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 126.1 MB/s  0:00:00
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from sympy==1.13.1->torch) (1.3.0)
+Requirement already satisfied: numpy in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from torchvision) (1.26.4)
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision)
+  Downloading https://download.pytorch.org/whl/pillow-11.3.0-cp310-cp310-win_amd64.whl.metadata (9.2 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\infolab01\downloads\thesis\bkp_thesis_14_11\.venv\lib\site-packages (from jinja2->torch) (3.0.3)
+Downloading https://download.pytorch.org/whl/pillow-11.3.0-cp310-cp310-win_amd64.whl (7.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 108.4 MB/s  0:00:00
+Installing collected packages: sympy, pillow, torch, torchvision, torchaudio
+  Attempting uninstall: sympy
+    Found existing installation: sympy 1.14.0
+    Uninstalling sympy-1.14.0:
+      Successfully uninstalled sympy-1.14.0
+Successfully installed pillow-11.3.0 sympy-1.13.1 torch-2.5.1+cu121 torchaudio-2.5.1+cu121 torchvision-0.20.1+cu121
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ python - << 'EOF'
+import torch
+print("CUDA available:", torch.cuda.is_available())
+print("GPU name:", torch.cuda.get_device_name())
+EOF
+CUDA available: True
+GPU name: NVIDIA GeForce RTX 4070
+(.venv)
+INFOLAB01@ML1-4 MINGW64 ~/Downloads/Thesis/bkp_thesis_14_11 (main)
+$ bash scripts/run.sh -m mistral -b long-bench -d samsum -o True
+Sat Nov 22 16:26:50 2025
